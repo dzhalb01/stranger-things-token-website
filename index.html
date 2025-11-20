@@ -1,291 +1,355 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>$ST ON SOL</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap"
-        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fauna+One&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fauna+One&display=swap" rel="stylesheet">
+    <link
+      rel="icon"
+      type="image/z-icon"
+      href="images/photo_2025-11-20_22-59-06.jpg"
+    />
+  </head>
 
-
-    <link rel="icon" type="image/z-icon" href="images/photo_2025-11-20_22-59-06.jpg">
-</head>
-
-<body>
-    <audio id="bg-music" loop>
-        <source src="str_theme_original.mp3" type="audio/mpeg">
-    </audio>
-
-    <div id="start-overlay" style="
-    position: fixed; top:0; left:0; width:100%; height:100%;
-     display:flex;
-    justify-content:center; align-items:center; cursor:pointer;">
+  <body>
+    <!-- Mobile Warning Overlay -->
+    <div class="mobile-warning">
+      <div class="mobile-warning__line"></div>
+      <svg
+        class="mobile-warning__icon"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M20 18c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2H0v2h24v-2h-4zM4 6h16v10H4V6z"
+        />
+      </svg>
+      <h2 class="mobile-warning__title">DESKTOP RECOMMENDED</h2>
+      <p class="mobile-warning__message">
+        For the best experience exploring the Upside Down, please visit this
+        site on a desktop device.
+      </p>
     </div>
 
+    <audio id="bg-music" loop>
+      <source src="str_theme_original.mp3" type="audio/mpeg" />
+    </audio>
+
+    <div
+      id="start-overlay"
+      style="
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+      "
+    ></div>
+
     <header class="header">
-        <div class="container">
-            <img src="images/hero_logo-stranger-things.818bc264 2.svg" class="header__logo">
+      <div class="container">
+        <img
+          src="images/hero_logo-stranger-things.818bc264 2.svg"
+          class="header__logo"
+        />
 
-            <nav>
-                <ul>
-                    <li><a href="#about">ABOUT</a></li>
-                    <li><a href="#characters">CHARACTERS</a></li>
-                    <li><a href="#roadmap">ROADMAP</a></li>
-                    <li><a href="#buy">CONTRACT</a></li>
-                    <li><a href="https://x.com/i/communities/1987206600264933604" target="_blank">TWITTER</a></li>
-                </ul>
-            </nav>
-
-
-        </div>
-
-
+        <nav>
+          <ul>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#characters">CHARACTERS</a></li>
+            <li><a href="#roadmap">ROADMAP</a></li>
+            <li><a href="#buy">CONTRACT</a></li>
+            <li>
+              <a
+                href="https://x.com/i/communities/1987206600264933604"
+                target="_blank"
+                >TWITTER</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <section class="photo-section">
-        <img class="photo__clubhouse" src="images/Group 17.png">
+      <img class="photo__clubhouse" src="images/Group 17.png" />
 
-        <div class="line-text">
-            <div class="line">.</div>
-            <h1 id="about">ABOUT TOKEN</h1>
-            <div class="line">.</div>
-        </div>
+      <div class="line-text">
+        <div class="line">.</div>
+        <h1 id="about">ABOUT TOKEN</h1>
+        <div class="line">.</div>
+      </div>
 
-        <p class="about__title">$ST — The Heart of Stranger DeFi</p>
+      <p class="about__title">$ST — The Heart of Stranger DeFi</p>
 
-        <p class="about__info">The Upside Down just opened in crypto, and $ST is your only way in.<br> This isn't
-            another boring token—it's a living DeFi saga where<br> Stranger Things fans become warriors, traders become
-            legends, and<br> community chaos builds something legendary. No presale, no bullshit—just<br> pure organic
-            mayhem starting November 25th.</p>
+      <p class="about__info">
+        The Upside Down just opened in crypto, and $ST is your only way in.<br />
+        This isn't another boring token—it's a living DeFi saga where<br />
+        Stranger Things fans become warriors, traders become legends, and<br />
+        community chaos builds something legendary. No presale, no
+        bullshit—just<br />
+        pure organic mayhem starting November 25th.
+      </p>
     </section>
 
     <section class="contract">
-        <div class="line-text">
-            <div class="line">.</div>
-            <h1 id="buy">CONTRACT</h1>
-            <div class="line">.</div>
+      <div class="line-text">
+        <div class="line">.</div>
+        <h1 id="buy">CONTRACT</h1>
+        <div class="line">.</div>
+      </div>
+
+      <img class="contract__img" src="images/on-top-img 1.png" />
+
+      <div class="smart-contract">
+        <div class="contract-text-container">
+          <p>SOON</p>
         </div>
-
-        <img class="contract__img" src="images/on-top-img 1.png">
-
-
-        <div class="smart-contract">
-            <div class="contract-text-container">
-                <p>SOON</p>
-            </div>
-            <img class="eagle" src="images/3ef52c1f3777032901f98b674b9c1463ad27ca5f-removebg-preview.png">
-        </div>
+        <img
+          class="eagle"
+          src="images/3ef52c1f3777032901f98b674b9c1463ad27ca5f-removebg-preview.png"
+        />
+      </div>
     </section>
-
 
     <section class="characters">
-        <div class="line-text">
-            <div class="line">.</div>
-            <h1 id="characters">CHARACTERS</h1>
-            <div class="line">.</div>
+      <div class="line-text">
+        <div class="line">.</div>
+        <h1 id="characters">CHARACTERS</h1>
+        <div class="line">.</div>
+      </div>
+
+      <div class="character__card">
+        <div class="card__photo">
+          <img
+            class="character__img"
+            src="images/Eleven_(Stranger_Things) 1.png"
+          />
         </div>
-
-
-        <div class="character__card">
-            <div class="card__photo">
-                <img class="character__img" src="images/Eleven_(Stranger_Things) 1.png">
-            </div>
-            <div class="card__info">
-                <p class="character__name">HOPPER</p>
-                <p class="character__desc">Hopper is a battle-scarred fortress of a man, shaped by loss and hardened by
-                    duty. His strength isn’t just in his fists, but in his unbreakable resolve to protect the people he
-                    cares about. </p>
-                <a href="#" class="token-btn">TOKEN</a>
-
-            </div>
+        <div class="card__info">
+          <p class="character__name">HOPPER</p>
+          <p class="character__desc">
+            Hopper is a battle-scarred fortress of a man, shaped by loss and
+            hardened by duty. His strength isn’t just in his fists, but in his
+            unbreakable resolve to protect the people he cares about.
+          </p>
+          <a href="#" class="token-btn">TOKEN</a>
         </div>
+      </div>
 
-
-
-
-
-        <div class="character__card">
-            <div class="card__photo">
-                <img class="character__img" src="images/Eleven_(Stranger_Things) 2.png">
-            </div>
-            <div class="card__info">
-                <p class="character__name">NANCY</p>
-                <p class="character__desc">Nancy is a sharp-minded investigator with instincts honed by danger and
-                    darkness. Beneath her calm precision lies a fierce determination to uncover the truth—no matter the
-                    cost. </p>
-                <a href="#" class="token-btn">TOKEN</a>
-
-            </div>
+      <div class="character__card">
+        <div class="card__photo">
+          <img
+            class="character__img"
+            src="images/Eleven_(Stranger_Things) 2.png"
+          />
         </div>
-
-
-        <div class="character__card">
-            <div class="card__photo">
-                <img class="character__img" src="images/Eleven_(Stranger_Things) 3.png">
-            </div>
-            <div class="card__info">
-                <p class="character__name">ELEVEN</p>
-                <p class="character__desc">Eleven is a telekinetic powerhouse forged by trauma and driven by an
-                    unshakable will to protect those she calls family. When the world breaks open, she bends reality
-                    itself, turning fear into explosive force. </p>
-                <a href="#" class="token-btn">TOKEN</a>
-
-            </div>
+        <div class="card__info">
+          <p class="character__name">NANCY</p>
+          <p class="character__desc">
+            Nancy is a sharp-minded investigator with instincts honed by danger
+            and darkness. Beneath her calm precision lies a fierce determination
+            to uncover the truth—no matter the cost.
+          </p>
+          <a href="#" class="token-btn">TOKEN</a>
         </div>
+      </div>
 
-
-
-        <div class="character__card">
-            <div class="card__photo">
-                <img class="character__img" src="images/Eleven_(Stranger_Things) 5.png">
-            </div>
-            <div class="card__info">
-                <p class="character__name">MIKE</p>
-                <p class="character__desc">Mike is the steadfast heart of the group, guided by loyalty even when the
-                    world around him falls apart. In conflict, his courage burns quietly but fiercely, pushing him to
-                    stand firm beside his friends no matter the danger. </p>
-                <a href="#" class="token-btn">TOKEN</a>
-
-            </div>
+      <div class="character__card">
+        <div class="card__photo">
+          <img
+            class="character__img"
+            src="images/Eleven_(Stranger_Things) 3.png"
+          />
         </div>
-
-
-        <div class="character__card">
-            <div class="card__photo">
-                <img class="character__img" src="images/Eleven_(Stranger_Things) 7.png">
-            </div>
-            <div class="card__info">
-                <p class="character__name">WILL</p>
-                <p class="character__desc">Will is a quiet soul forever marked by the shadows he survived, carrying a
-                    connection to the unknown that few can understand. In moments of crisis, his intuition becomes a
-                    powerful guide, sensing threats long before they surface. </p>
-                <a href="#" class="token-btn">TOKEN</a>
-
-            </div>
+        <div class="card__info">
+          <p class="character__name">ELEVEN</p>
+          <p class="character__desc">
+            Eleven is a telekinetic powerhouse forged by trauma and driven by an
+            unshakable will to protect those she calls family. When the world
+            breaks open, she bends reality itself, turning fear into explosive
+            force.
+          </p>
+          <a href="#" class="token-btn">TOKEN</a>
         </div>
+      </div>
 
-
-        <div class="character__card">
-            <div class="card__photo">
-                <img class="character__img" src="images/Eleven_(Stranger_Things) 8.png">
-            </div>
-            <div class="card__info">
-                <p class="character__name">DUSTIN</p>
-                <p class="character__desc">Dustin is a brilliant problem-solver whose curiosity turns chaos into
-                    opportunity. In any team, his quick thinking and inventive mind become the spark that transforms
-                    impossible situations into clever victories.. </p>
-                <a href="#" class="token-btn">TOKEN</a>
-
-
-            </div>
+      <div class="character__card">
+        <div class="card__photo">
+          <img
+            class="character__img"
+            src="images/Eleven_(Stranger_Things) 5.png"
+          />
         </div>
+        <div class="card__info">
+          <p class="character__name">MIKE</p>
+          <p class="character__desc">
+            Mike is the steadfast heart of the group, guided by loyalty even
+            when the world around him falls apart. In conflict, his courage
+            burns quietly but fiercely, pushing him to stand firm beside his
+            friends no matter the danger.
+          </p>
+          <a href="#" class="token-btn">TOKEN</a>
+        </div>
+      </div>
 
+      <div class="character__card">
+        <div class="card__photo">
+          <img
+            class="character__img"
+            src="images/Eleven_(Stranger_Things) 7.png"
+          />
+        </div>
+        <div class="card__info">
+          <p class="character__name">WILL</p>
+          <p class="character__desc">
+            Will is a quiet soul forever marked by the shadows he survived,
+            carrying a connection to the unknown that few can understand. In
+            moments of crisis, his intuition becomes a powerful guide, sensing
+            threats long before they surface.
+          </p>
+          <a href="#" class="token-btn">TOKEN</a>
+        </div>
+      </div>
+
+      <div class="character__card">
+        <div class="card__photo">
+          <img
+            class="character__img"
+            src="images/Eleven_(Stranger_Things) 8.png"
+          />
+        </div>
+        <div class="card__info">
+          <p class="character__name">DUSTIN</p>
+          <p class="character__desc">
+            Dustin is a brilliant problem-solver whose curiosity turns chaos
+            into opportunity. In any team, his quick thinking and inventive mind
+            become the spark that transforms impossible situations into clever
+            victories..
+          </p>
+          <a href="#" class="token-btn">TOKEN</a>
+        </div>
+      </div>
     </section>
-
 
     <section class="Roadmap">
-        <div class="line-text">
-            <div class="line">.</div>
-            <h1 id="roadmap">ROADMAP</h1>
-            <div class="line">.</div>
-        </div>
-
-
-
-
-
+      <div class="line-text">
+        <div class="line">.</div>
+        <h1 id="roadmap">ROADMAP</h1>
+        <div class="line">.</div>
+      </div>
     </section>
 
-
-
     <div class="container-roadmap">
-        <div class="roadmap-wrapper">
-            <div class="roadmap-item">
-                <div class="roadmap-date">Nov 2026</div>
-                <div class="roadmap-content">
-                    Website launch and $ST token reveal. Three heroes enter the game—choose your fighter.
-                </div>
-            </div>
-
-            <div class="roadmap-item">
-                <div class="roadmap-date">Nov 2026</div>
-                <div class="roadmap-content">
-                    Official $ST token launch on DexScreener. No presale, no bundles—pure organic chaos begins.
-                </div>
-            </div>
-
-            <div class="roadmap-item">
-                <div class="roadmap-date">Dec 2026</div>
-                <div class="roadmap-content">
-                    Community launches their own character fan tokens. Best tokens get featured on-site. Leaderboards,
-                    teams, and alliances form.
-                </div>
-            </div>
-
-            <div class="roadmap-item">
-                <div class="roadmap-date">Dec 2026</div>
-                <div class="roadmap-content">
-                    Stranger DeFi Game goes live. Card-style tournaments, team battles, and prize drops for active
-                    holders. Fight or die.
-                </div>
-            </div>
-
-            <div class="roadmap-item">
-                <div class="roadmap-date">Jan 2026</div>
-                <div class="roadmap-content">
-                    Full in-game economy unlocked. Multi-chain expansion (Solana, Base, BSC). Create Your Own Hero
-                    mechanic launches. The saga continues.
-                </div>
-            </div>
-
-            <div class="roadmap-item">
-                <div class="roadmap-date">Jan 2026</div>
-                <div class="roadmap-content">
-                    Lore drops, viral countdowns, and first fragments of the Stranger DeFi universe leak online. Early
-                    supporters earn unique “Founders Badges”.
-                </div>
-            </div>
-
-            <div class="roadmap-item">
-                <div class="roadmap-date">Feb 2026</div>
-                <div class="roadmap-content">
-                    Backstories, D&D-style classes, and stat balancing go live. Players unlock early missions and begin
-                    gathering XP for their chosen hero.
-                </div>
-            </div>
+      <div class="roadmap-wrapper">
+        <div class="roadmap-item">
+          <div class="roadmap-date">Nov 2026</div>
+          <div class="roadmap-content">
+            Website launch and $ST token reveal. Three heroes enter the
+            game—choose your fighter.
+          </div>
         </div>
+
+        <div class="roadmap-item">
+          <div class="roadmap-date">Nov 2026</div>
+          <div class="roadmap-content">
+            Official $ST token launch on DexScreener. No presale, no
+            bundles—pure organic chaos begins.
+          </div>
+        </div>
+
+        <div class="roadmap-item">
+          <div class="roadmap-date">Dec 2026</div>
+          <div class="roadmap-content">
+            Community launches their own character fan tokens. Best tokens get
+            featured on-site. Leaderboards, teams, and alliances form.
+          </div>
+        </div>
+
+        <div class="roadmap-item">
+          <div class="roadmap-date">Dec 2026</div>
+          <div class="roadmap-content">
+            Stranger DeFi Game goes live. Card-style tournaments, team battles,
+            and prize drops for active holders. Fight or die.
+          </div>
+        </div>
+
+        <div class="roadmap-item">
+          <div class="roadmap-date">Jan 2026</div>
+          <div class="roadmap-content">
+            Full in-game economy unlocked. Multi-chain expansion (Solana, Base,
+            BSC). Create Your Own Hero mechanic launches. The saga continues.
+          </div>
+        </div>
+
+        <div class="roadmap-item">
+          <div class="roadmap-date">Jan 2026</div>
+          <div class="roadmap-content">
+            Lore drops, viral countdowns, and first fragments of the Stranger
+            DeFi universe leak online. Early supporters earn unique “Founders
+            Badges”.
+          </div>
+        </div>
+
+        <div class="roadmap-item">
+          <div class="roadmap-date">Feb 2026</div>
+          <div class="roadmap-content">
+            Backstories, D&D-style classes, and stat balancing go live. Players
+            unlock early missions and begin gathering XP for their chosen hero.
+          </div>
+        </div>
+      </div>
     </div>
 
     <footer>
-        <div class="footer__logo">
-            <img src="images/hero_logo-stranger-things.818bc264 1.png">
-        </div>
-        <div class="footer__social-media">
-            <a href="#"><img class="dexscreener-logo" src="images/dexscreener-logo 2.png"></a>
-            <a href="https://x.com/i/communities/1987206600264933604" target="_blank"><img class="twitter-logo" id="twitter" src="images/twitter-logo 1.png"></a>
-           <a href="#"> <img class="pump-logo" src="images/Pump-Fun-Logo 1.png"></a>
-        </div>
+      <div class="footer__logo">
+        <img src="images/hero_logo-stranger-things.818bc264 1.png" />
+      </div>
+      <div class="footer__social-media">
+        <a href="#"
+          ><img class="dexscreener-logo" src="images/dexscreener-logo 2.png"
+        /></a>
+        <a
+          href="https://x.com/i/communities/1987206600264933604"
+          target="_blank"
+          ><img
+            class="twitter-logo"
+            id="twitter"
+            src="images/twitter-logo 1.png"
+        /></a>
+        <a href="#">
+          <img class="pump-logo" src="images/Pump-Fun-Logo 1.png"
+        /></a>
+      </div>
     </footer>
-</body>
-<script>
+  </body>
+  <script>
     const audio = document.getElementById("bg-music");
     const overlay = document.getElementById("start-overlay");
 
     overlay.addEventListener("click", () => {
-        audio.play().catch(err => console.log("Play failed:", err));
-        overlay.style.display = "none"; // hide overlay after starting
+      audio.play().catch((err) => console.log("Play failed:", err));
+      overlay.style.display = "none"; // hide overlay after starting
     });
-
-
-
-</script>
+  </script>
+</html>
