@@ -121,7 +121,7 @@ h1{
 }
 .smart-contract{
     display: flex;
-    max-width: 80%;
+    min-width: 70%;
     height: 130px;
     border: 5px solid rgba(255, 0, 0, 1); /* added 'solid' */
   font-family: "Fauna One", serif;
@@ -129,10 +129,16 @@ h1{
   border-radius: 100px;
     text-align: center;
     align-items: center;
+    justify-content: space-between;
     background-color: rgb(15, 15, 15);
     padding-left: 50px;
     padding-right: 30px;
     gap: 30px;
+}
+
+.contract-text-container {
+    width: 100%;
+    padding-left: 10%;
 }
 
 .characters{
@@ -318,6 +324,10 @@ footer{
     gap: 100px;
     align-items: center;
     padding-left: 50px;
+}
+
+.footer__social-media a:hover {
+    cursor: pointer;
 }
 
 .dexscreener-logo{
